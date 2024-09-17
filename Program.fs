@@ -1,2 +1,4 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+﻿//В массиве все четные элементы увеличить в 2 раза.
+// Пример: из массива A[5]: 1 3 4 5 6 должен получиться массив 1 3 8 5 12.
+
+printfn "%A" ([|1; 3; 4; 5; 6|] |> Array.map (fun i -> if i % 2 = 0 then i * 2 else i))
